@@ -22,18 +22,18 @@
 }
 
 .list{
-    display:flex;
     margin: 25px 25px;
     font-size: larger;
     font-weight: bold;
 }
 
 item{
+    display: block;
     color: rgb(2, 61, 2);
     margin:0px 20px;
 }
 
-@media screen and (min-width: 450px ) and (max-width: 500px) {
+@media screen and (min-width: 500px ) and (max-width: 740px) {
     .heading{
         font-size:medium;
     }
@@ -45,14 +45,26 @@ item{
     }
 }
 
-@media screen and (min-width: 250px ) and (max-width: 449px) {
+@media screen and (max-width: 499px) {
     .heading{
-        font-size:small;
+        font-size:smaller;
     }
     .para{
-        font-size:small;
+        font-size:smaller;
     }
     .list{
-        font-size:small;
+        font-size:smaller;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .heading{
+        font-size:xx-small;
+    }
+    .para{
+        font-size:xx-small;
+    }
+    .list{
+        font-size:xx-small;
     }
 }
